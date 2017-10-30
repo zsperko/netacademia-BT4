@@ -56,6 +56,15 @@ $(".cherry-custom-file").on(
     }
   );
 
+  var alertBox = $(".alert.alert-primary");
+function showInvalidMessage(){
+  alertBox
+    .removeClass("alert-primary")
+    .addClass("alert-danger")
+    .find(".alert-message")
+    .text("Sikertelen belépés!");  
+}
+
 //Ticket oldal
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
